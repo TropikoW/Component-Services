@@ -1,0 +1,18 @@
+.portrait-container {
+  max-width: 300px; /* Ancho máximo del contenedor */
+  margin: 20px; /* Márgenes alrededor del contenedor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenedor */
+  overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.portrait-container img {
+  width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción original */
+  display: block; /* Elimina el espacio extra debajo de la imagen */
+}

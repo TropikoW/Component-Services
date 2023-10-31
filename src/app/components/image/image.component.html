@@ -1,0 +1,4 @@
+<!-- here load the retrait photo -->
+<div class="portrait-container">
+  <img [src]="photo" alt="Imagen Retrato" (error)="imgToBreak()" (load)="imageLoaded()">
+</div>

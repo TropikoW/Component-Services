@@ -1,0 +1,98 @@
+// background
+.container__section__products{
+  background-color: white;
+}
+// targets
+.order_foreach_targets{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.container__section__products:first-child{
+  grid-column: 1 / span / 1;
+  grid-row: 1 / span / 1;
+}
+.container__section__products:nth-child(2){
+  grid-column: 2 / span / 2;
+  grid-row: 2 / span / 2;
+}
+.section__main__target{
+  grid-column: 2/ span / 1;
+  border: 1px solid rgb(201, 201, 201);
+  position: relative;
+  border-radius: 10px;
+}
+.container__section__products__details{
+  background-color: black;
+  width: 300px;
+  padding: 10px;
+}
+.container__section__products__details>h1{
+  text-align: start;
+  color: white;
+  font-size: 18px;
+  font-family: 'Sometype Mono', monospace;
+}
+.section__main__target{
+  max-height: 400px;
+  overflow-y: auto;
+}
+.section__main__target>figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.section__main__target>figure>img{
+  width: 250px;
+  height: 250px;
+}
+.section__main__target>figure>figcaption{
+  font-size: 8px;
+  text-align: center;
+}
+.section__main__target__price{
+  position: absolute;
+  top: 265px;
+  right: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.container__section__products__details>ul{
+  list-style: none;
+}
+.container__section__products__details>ul>li{
+  font-size: 12px;
+  margin: 5px 0;
+  color: white;
+  font-family: 'Sometype Mono', monospace;
+}
+.container__section__products__details>ul>li:nth-last-child(1){
+  margin: 0 0;
+}
+.section__footer{
+  background-color : black;
+  padding: 30px;
+  margin-top: 20px;
+}
+.section__footer>section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__footer>section>p{
+  color: white;
+  font-size: 20px;
+  font-family: 'Sometype Mono', monospace;
+  cursor: pointer;
+}
+.section__footer>section>p:hover{
+  color: rgb(31, 27, 27);
+}
+.section__footer>section>p::after{
+  content: '|';
+}

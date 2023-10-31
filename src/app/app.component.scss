@@ -1,0 +1,27 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.container>input{
+  word-wrap: break-word;
+  height: 15px;
+}
+.btn__addpr{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 19px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.btn__addpr:hover{
+  background-color: rgb(49, 49, 49);
+}
+.pop-up{
+  position:fixed;
+  right: 0;
+  bottom: 30px;
+}

@@ -1,0 +1,38 @@
+.container{
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 8.5);
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+.container>figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
+.container>figure>img{
+  border-radius: 50%;
+}
+.container>figure>figcaption{
+  font-size: 19px;
+}
+.container__message{
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  width: 200px;
+  margin: 10px auto;
+  background-color: #99d0f0;
+  border-radius: 8px;
+  box-shadow: 10px 9px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.container__message>p{
+  margin-top: 5px;
+  color: #333;
+}
+

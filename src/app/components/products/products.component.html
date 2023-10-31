@@ -1,0 +1,33 @@
+<div>
+  <div>
+    <section class="section__header">
+      <p>Shirts</p>
+    </section>
+  </div>
+  <div class="order_foreach_targets">
+    <div class="container__section__products" *ngFor="let product of productsList">
+      <section class="section__main__target">
+        <figure>
+          <img [src]="product.image" alt="">
+          <figcaption>Imagen de referencia</figcaption>
+        </figure>
+        <section class="container__section__products__details">
+          <h1>{{product.name}}</h1>
+          <p class="section__main__target__price">{{product.price}} COP</p>
+          <ul>
+            <li *ngFor="let detail of product.details"> {{detail}} </li>
+          </ul>
+        </section>
+      </section>
+  </div>
+  </div>
+  <div>
+    <section class="section__footer">
+      <section>
+        <p>Free copyrigth</p>
+        <p>Made by Jovanny</p>
+        <p>Angular developer</p>
+      </section>
+    </section>
+  </div>
+</div>
